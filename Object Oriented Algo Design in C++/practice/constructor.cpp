@@ -1,0 +1,70 @@
+#include<iostream>
+using namespace std;
+
+
+class array
+{
+public:
+	array();
+
+	int a[100];
+	int size;
+};
+
+array::array()
+{
+	int index1;
+	cout<<"\nenter the size of the array:";
+	cin>>size;
+	cout<<"\nenter the elements of the array: ";
+	for(index1=0;index1<size;index1++)
+	 cin>>a[index1];
+}
+
+class sorter
+{
+	public:
+		sorter();
+		int findmax(int a[100],int start,int size);
+};
+
+class sorter::sorter()
+{
+	int index1,result,start=0,hold;
+	array array1;
+	cout<<"\nthe elements of the array: ";	
+	for(index1=0;index1<array1.size;index1++)
+	{
+	 result=findmax(array1.a,start,array1.size);
+	 cout<<array1.a[result]<<" ";		
+	 hold=array1.a[start];
+	 array1.a[start]=array1.a[result];
+	 array1.a[result]=hold;
+	 start++;
+	}
+}
+
+int sorter::findmax(int a[100],int start,int size)
+{
+	int index1,max,max_i;
+	max=a[start];
+	max_i=start;
+	for(index1=start+1;index1<size;index1++)
+	{
+	 if(max<a[index1])
+	  max_i=index1;
+	}
+	return max_i;
+}
+
+		
+
+main()
+{
+	
+	sorter sorter1;
+	
+	return 0;
+}
+
+

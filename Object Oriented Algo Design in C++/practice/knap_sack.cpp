@@ -1,0 +1,91 @@
+/*given n objects with their weights and values, objective is to maximise profit by including objects into a sack of fixed capacity*/
+#include<iostream>
+using namespace std;
+
+
+
+class knap_sack
+{
+	public:
+		knap_sack();
+		int size;
+		int capacity;
+		int pick[100][100];//to find the elements in picked
+		int find_profit(int weight[100],int p[100]);
+		void printpicks(int item,int capacity, int weight[100]);
+};
+
+knap_sack::knap_sack()
+{
+	cout<<"\nenter the number of items in the sack:";
+	cin>>size;
+	int weight[size],p[size];
+	for(int i=1;i<=size;i++)
+	{
+         cout<<"\nenter the weight of "<<i<<" element:";
+	 cin>>weight[i];
+	 cout<<"\nenter the value of "<<i<<" element:";
+	 cin>>p[i];
+	}
+	cout<<"\nenter the capacity of the sack:";
+	cin>>capacity;
+	int profit=find_profit(weight,p);
+	cout<<"the maximum profit is "<<profit<<endl;
+	cout<<"the picks are: ";
+	printpicks(size,capacity,weight);
+	cout<<endl;
+}
+
+int knap_sack::find_profit(int weight[100],int p[100])
+{
+	int w,i;
+	int m[size+1][capacity+1];
+	for(w=0;w<=capacity+1;w++)
+	  	m[0][w]=0;
+	for(i=1;i<=size;i++)
+	{
+	 for(w=0;w<=capacity;w++)
+	 {
+	   if(w<weight[i])
+	   {
+		pick[i][w]=-1;
+		m[i][w]=m[i-1][w];
+	   }
+	   else
+	   {
+		if((p[i]+m[i-1][w-weight[i]])>m[i-1][w])
+		{
+	 		pick[i][w]=1;
+			m[i][w]=p[i]+m[i-1][w-weight[i]];
+	        }
+		else
+		{
+			pick[i][w]=-1;
+			m[i][w]=m[i-1][w];
+		}
+	   }
+	 }
+	}
+	return m[size][capacity];
+} //returns maximum profit value
+
+void knap_sack::printpicks(int item, int capacity,int weight[100])
+{
+	while(item>0)
+	{
+	 if(pick[item][capacity]==1)
+	 {
+		cout<<item<<" ";
+		item--;
+		capacity=capacity-weight[item];
+	 }
+	 else
+		item--;
+	}
+}//prints the items that has to be picked
+
+main()
+{
+	knap_sack sack1;
+	return 0;
+}

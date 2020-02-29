@@ -1,0 +1,26 @@
+//stack.h
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+
+#define default_value 100
+
+template<class t>
+class stack
+{
+	public:
+		stack(int= default_value);
+		~stack()
+		{
+			delete [] values;
+		}
+		void push(t data);
+		t pop();
+		t top_value();
+		int isempty();
+		int isfull();
+	private:
+		int size;
+		t *values;
+		int index;
+};

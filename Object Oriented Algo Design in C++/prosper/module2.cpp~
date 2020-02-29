@@ -1,0 +1,139 @@
+#include "module2.h"
+int module2:: parti(int a[200],int p,int r)
+{
+int j,x,t,t1,i,l;
+x=a[r];
+i=p-1;
+for(j=p;j<r;j++)
+{
+if(a[j]<=x)
+	{
+	i=i+1;
+	t=a[i];
+	a[i]=a[j];
+	a[j]=t;
+	}
+}
+t1=a[r];
+a[r]=a[i+1];
+a[i+1]=t1;
+
+return i+1;
+}
+
+void module2::quick(int a2[200],int p2,int r2)
+{
+int q;
+	if(p2<r2)
+	{
+	q=parti(a2,p2,r2);
+	quick(a2,p2,q-1);
+	quick(a2,q+1,r2);
+	}
+}
+
+void module2::initialization()	
+ {
+     int i;
+      cout<<"enter the n"<<endl;
+      cin>>size;
+
+      cout<<"enter integer array"<<endl;
+	for(i=1;i<=size;i++)
+	 {
+	   cin>>array[i];
+	  }
+	
+
+ }
+void module2::quick_sort(int array[200],int size)
+{
+	quick(array,1,size);
+}
+	
+void module2::quick_pivot_first(int array[200],int size)
+{
+int temp=array[1];
+array[1]=array[size];
+array[size]=temp;
+
+quick(array,1,size);
+	/*cout<<"quickfirst"<<endl;
+	for(int i=1;i<=size;i++)
+	{
+	  cout<<array[i];
+          cout<<"\t";
+	}*/
+		
+}	
+void module2::display(int array[1000],int size)
+  {
+	
+	//cout<<"\ndisplay:"<<endl;
+	 for(int index1=1;index1<=size;index1++)
+        {
+	    cout << array[index1] << " ";
+        }
+	cout<<endl;
+  }
+
+void module2::quick_pivot_middle(int array[200],int size)
+{
+	//array1();
+
+int temp=array[size/2];
+array[size/2]=array[size];
+array[size]=temp;
+
+quick(array,1,size);
+/*cout<<"quick_middle"<<endl;
+	for(int i=1;i<=size;i++)
+	{
+	  cout<<array[i];
+          cout<<"\t";
+	}*/
+		
+}	
+
+void module2::quick_pivot_random(int array[200],int size)
+{
+	//array1();
+int ran=rand()%size+1;
+
+int temp=array[ran];
+array[ran]=array[size];
+array[size]=temp;
+
+//cout<<"random no.index"<<ran<<endl;
+
+quick(array,1,size);
+/*cout<<"quick_random"<<endl;
+	for(int i=1;i<=size;i++)
+	{
+	  cout<<array[i];
+          cout<<"\t";
+	}*/
+		
+}	
+
+/*int main()
+{
+	int a,p;
+	module2 o;
+do{
+	cout<<"enter 1:quick sort\n 2:quick sort pivot as first\n 3:quick sort pivot as middle\n 4:quick sort pivot as random"<<endl;
+	cin>>a;
+	if(a==1)
+		o.quick_sort();
+	else if(a==2)
+		o.quick_pivot_first();
+	else if(a==3)
+		o.quick_pivot_middle();
+	else 
+		o.quick_pivot_random();
+	cout<<"press 1 to continue"<<endl;
+	cin>>p;
+  }while(p==1);
+
+return 0;
+}*/

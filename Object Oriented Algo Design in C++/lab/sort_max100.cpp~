@@ -1,0 +1,92 @@
+/*program to sort 100 arrays of given input size by using max function */
+#include<iostream>
+#include<cstdlib>
+#include<time.h>
+using namespace std;
+
+
+class array
+{
+public:
+	array();
+
+	int a[1000];
+	int size;
+};
+
+array::array()
+{
+	int index1;
+	size=50;
+	
+	for(index1=0;index1<size;index1++)
+	 a[index1]=rand()%3000;
+}
+
+class sorter
+{
+	public:
+		sorter();
+		int findmax(int a[1000],int start,int size);
+};
+
+sorter::sorter()
+{
+	int index1,result,start,hold;
+	array array1;
+	for(start=0;start<array1.size;start++)
+	{
+	 result=findmax(array1.a,start,array1.size);	
+	 hold=array1.a[start];
+	 array1.a[start]=array1.a[result];
+	 array1.a[result]=hold;
+	}
+	
+}
+
+int sorter::findmax(int a[1000],int start,int size)
+{
+	int index1,max,max_i;
+	max=a[start];
+	max_i=start;
+	for(index1=start+1;index1<size;index1++)
+	{
+	 if(max<a[index1])
+	  {
+	   max=a[index1];
+	   max_i=index1;
+	  }
+	}
+	return max_i;
+}
+
+		
+
+main()
+{	
+	double total_time,sum=0,average;
+	clock_t start,end;
+	double time[100];
+	array array1;
+	int index1,index2;
+	for(index1=0;index1<100;index1++)
+	{
+	 start=clock();
+	 sorter sorter1;
+	 end=clock();
+	 cout<<"\nthe sorted array using max is: ";
+	 for(index2=0;index2<array1.size;index2++)
+	 	cout<<array1.a[index2]<<" ";
+	 total_time=((double)(end-start))/(CLOCKS_PER_SEC);
+	 cout<<"time taken for sort using max:"<<total_time<<endl;
+	 time[index1]=total_time;
+	}
+	for(index1=0;index1<100;index1++)
+	{
+	 sum=sum+time[index1];
+	}
+	average=sum/100;
+	cout<<"\naverage time taken for  sort_max:"<<average<<endl;
+	return 0;
+}
+

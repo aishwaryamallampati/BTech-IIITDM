@@ -1,0 +1,651 @@
+for 1input :
+(40,33) (33,20) (33,38) (26,16) (46,2) (38,15) (13,41) (27,31) (22,41) (46,44) 
+the picks using dp are: (22,41) (27,31) (13,41) (33,38) 
+the maximum profit using dp is 151
+
+
+the total weight using dp is 95
+
+the picks using greedy are:(13,41) (22,41) (26,16) (27,31) 
+the maximum profit using greedy is 149
+
+the total weight using greedy is 88
+no
+for 2input :
+(35,7) (5,40) (48,43) (21,4) (49,37) (32,11) (18,38) (4,24) (24,29) (14,43) 
+the picks using dp are: (14,43) (4,24) (18,38) (48,43) (5,40) 
+the maximum profit using dp is 188
+
+
+the total weight using dp is 89
+
+the picks using greedy are:(4,24) (5,40) (14,43) (18,38) (21,4) (24,29) 
+the maximum profit using greedy is 189
+
+the total weight using greedy is 86
+no
+for 3input :
+(5,51) (31,17) (14,6) (21,10) (21,40) (27,4) (46,31) (17,16) (48,12) (19,19) 
+the picks using dp are: (19,19) (17,16) (21,40) (31,17) (5,51) 
+the maximum profit using dp is 143
+
+
+the total weight using dp is 93
+
+the picks using greedy are:(5,51) (14,6) (17,16) (19,19) (21,10) (21,40) 
+the maximum profit using greedy is 146
+
+the total weight using greedy is 97
+no
+for 4input :
+(48,24) (30,39) (10,33) (11,7) (36,24) (49,14) (49,29) (4,11) (8,24) (45,2) 
+the picks using dp are: (8,24) (4,11) (36,24) (11,7) (10,33) (30,39) 
+the maximum profit using dp is 138
+
+
+the total weight using dp is 99
+
+the picks using greedy are:(4,11) (8,24) (10,33) (11,7) (30,39) (36,24) 
+the maximum profit using greedy is 140
+
+the total weight using greedy is 99
+no
+for 5input :
+(37,20) (6,5) (25,47) (20,21) (7,13) (39,3) (10,42) (41,20) (49,1) (26,7) 
+the picks using dp are: (10,42) (7,13) (20,21) (25,47) (37,20) 
+the maximum profit using dp is 143
+
+
+the total weight using dp is 99
+
+the picks using greedy are:(6,5) (7,13) (10,42) (20,21) (25,47) (26,7) 
+the maximum profit using greedy is 155
+
+the total weight using greedy is 94
+no
+for 6input :
+(49,49) (20,46) (51,23) (31,7) (20,24) (9,5) (18,39) (34,42) (34,27) (11,41) 
+the picks using dp are: (11,41) (18,39) (20,46) (49,49) 
+the maximum profit using dp is 175
+
+
+the total weight using dp is 98
+
+the picks using greedy are:(9,5) (11,41) (18,39) (20,24) (20,46) 
+the maximum profit using greedy is 162
+
+the total weight using greedy is 78
+no
+for 7input :
+(39,23) (17,23) (39,7) (42,36) (32,16) (42,3) (38,10) (49,37) (32,2) (18,51) 
+the picks using dp are: (18,51) (49,37) (17,23) 
+the maximum profit using dp is 111
+
+
+the total weight using dp is 84
+
+the picks using greedy are:(17,23) (18,51) (32,2) (32,16) 
+the maximum profit using greedy is 102
+
+the total weight using greedy is 99
+no
+for 8input :
+(25,51) (29,42) (38,11) (6,45) (11,16) (8,24) (13,25) (46,51) (5,36) (9,10) 
+the picks using dp are: (5,36) (13,25) (8,24) (11,16) (6,45) (29,42) (25,51) 
+the maximum profit using dp is 239
+
+
+the total weight using dp is 97
+
+the picks using greedy are:(5,36) (6,45) (8,24) (9,10) (11,16) (13,25) (25,51) 
+the maximum profit using greedy is 249
+
+the total weight using greedy is 77
+no
+for 9input :
+(25,50) (12,12) (33,34) (22,38) (35,39) (11,34) (38,39) (24,49) (23,30) (17,33) 
+the picks using dp are: (17,33) (24,49) (11,34) (22,38) (25,50) 
+the maximum profit using dp is 204
+
+
+the total weight using dp is 99
+
+the picks using greedy are:(11,34) (12,12) (17,33) (22,38) (23,30) 
+the maximum profit using greedy is 196
+
+the total weight using greedy is 85
+no
+for 10input :
+(19,24) (5,5) (22,24) (29,26) (8,37) (9,7) (9,21) (18,41) (28,13) (27,12) 
+the picks using dp are: (18,41) (9,21) (9,7) (8,37) (29,26) (5,5) (19,24) 
+the maximum profit using dp is 161
+
+
+the total weight using dp is 97
+
+the picks using greedy are:(5,5) (8,37) (9,7) (9,21) (18,41) (19,24) (22,24) 
+the maximum profit using greedy is 171
+
+the total weight using greedy is 90
+no
+for 11input :
+(1,37) (45,12) (49,42) (35,45) (45,51) (1,38) (48,30) (16,19) (3,45) (18,10) 
+the picks using dp are: (3,45) (1,38) (45,51) (35,45) (1,37) 
+the maximum profit using dp is 216
+
+
+the total weight using dp is 85
+
+the picks using greedy are:(1,37) (1,38) (3,45) (16,19) (18,10) (35,45) 
+the maximum profit using greedy is 206
+
+the total weight using greedy is 74
+no
+for 12input :
+(4,27) (16,13) (21,7) (27,48) (20,3) (33,45) (13,26) (30,36) (42,13) (29,9) 
+the picks using dp are: (13,26) (33,45) (27,48) (16,13) (4,27) 
+the maximum profit using dp is 159
+
+
+the total weight using dp is 93
+
+the picks using greedy are:(4,27) (13,26) (16,13) (20,3) (21,7) 
+the maximum profit using greedy is 124
+
+the total weight using greedy is 74
+no
+for 13input :
+(37,29) (20,34) (33,36) (1,35) (29,43) (18,6) (18,8) (18,38) (39,45) (9,7) 
+the picks using dp are: (9,7) (39,45) (18,38) (29,43) (1,35) 
+the maximum profit using dp is 168
+
+
+the total weight using dp is 96
+
+the picks using greedy are:(1,35) (9,7) (18,8) (18,38) (18,6) (20,34) 
+the maximum profit using greedy is 171
+
+the total weight using greedy is 84
+no
+for 14input :
+(21,41) (25,7) (41,4) (16,5) (41,45) (13,27) (47,33) (9,28) (17,34) (36,19) 
+the picks using dp are: (36,19) (17,34) (9,28) (13,27) (21,41) 
+the maximum profit using dp is 149
+
+
+the total weight using dp is 96
+
+the picks using greedy are:(9,28) (13,27) (16,5) (17,34) (21,41) 
+the maximum profit using greedy is 142
+
+the total weight using greedy is 76
+no
+for 15input :
+(25,3) (24,43) (10,16) (3,48) (34,11) (29,28) (26,2) (34,15) (30,50) (19,20) 
+the picks using dp are: (30,50) (29,28) (3,48) (10,16) (24,43) 
+the maximum profit using dp is 185
+
+
+the total weight using dp is 96
+
+the picks using greedy are:(3,48) (10,16) (19,20) (24,43) (25,3) 
+the maximum profit using greedy is 132
+
+the total weight using greedy is 81
+no
+for 16input :
+(17,5) (46,37) (11,3) (39,1) (36,23) (19,9) (25,17) (25,34) (6,2) (5,39) 
+the picks using dp are: (5,39) (25,34) (19,9) (46,37) 
+the maximum profit using dp is 119
+
+
+the total weight using dp is 95
+
+the picks using greedy are:(5,39) (6,2) (11,3) (17,5) (19,9) (25,17) 
+the maximum profit using greedy is 109
+
+the total weight using greedy is 83
+no
+for 17input :
+(37,33) (40,11) (8,22) (25,38) (45,17) (31,35) (47,25) (21,6) (1,8) (7,36) 
+the picks using dp are: (7,36) (1,8) (21,6) (31,35) (25,38) (8,22) 
+the maximum profit using dp is 145
+
+
+the total weight using dp is 93
+
+the picks using greedy are:(1,8) (7,36) (8,22) (21,6) (25,38) (31,35) 
+the maximum profit using greedy is 178
+
+the total weight using greedy is 93
+no
+for 18input :
+(4,50) (18,29) (40,17) (36,45) (18,40) (6,3) (46,45) (39,3) (41,37) (14,8) 
+the picks using dp are: (14,8) (6,3) (18,40) (36,45) (18,29) (4,50) 
+the maximum profit using dp is 175
+
+
+the total weight using dp is 96
+
+the picks using greedy are:(4,50) (6,3) (14,8) (18,29) (18,40) (36,45) 
+the maximum profit using greedy is 178
+
+the total weight using greedy is 96
+no
+for 19input :
+(3,44) (43,23) (42,37) (28,42) (18,34) (51,21) (33,42) (23,21) (7,8) (40,49) 
+the picks using dp are: (40,49) (7,8) (18,34) (28,42) (3,44) 
+the maximum profit using dp is 177
+
+
+the total weight using dp is 96
+
+the picks using greedy are:(3,44) (7,8) (18,34) (23,21) (28,42) 
+the maximum profit using greedy is 191
+
+the total weight using greedy is 79
+no
+for 20input :
+(21,45) (26,16) (39,13) (43,2) (49,5) (9,25) (22,51) (47,12) (10,24) (2,27) 
+the picks using dp are: (2,27) (10,24) (22,51) (9,25) (26,16) (21,45) 
+the maximum profit using dp is 188
+
+
+the total weight using dp is 90
+
+the picks using greedy are:(2,27) (9,25) (10,24) (21,45) (22,51) (26,16) 
+the maximum profit using greedy is 201
+
+the total weight using greedy is 90
+no
+for 21input :
+(31,1) (48,37) (16,44) (7,23) (51,20) (45,46) (13,19) (10,25) (31,26) (26,29) 
+the picks using dp are: (10,25) (13,19) (45,46) (7,23) (16,44) 
+the maximum profit using dp is 157
+
+
+the total weight using dp is 91
+
+the picks using greedy are:(7,23) (10,25) (13,19) (16,44) (26,29) 
+the maximum profit using greedy is 166
+
+the total weight using greedy is 72
+no
+for 22input :
+(30,35) (27,25) (8,23) (36,18) (20,11) (18,50) (36,39) (36,51) (32,16) (47,5) 
+the picks using dp are: (36,51) (36,39) (18,50) (8,23) 
+the maximum profit using dp is 163
+
+
+the total weight using dp is 98
+
+the picks using greedy are:(8,23) (18,50) (20,11) (27,25) 
+the maximum profit using greedy is 144
+
+the total weight using greedy is 73
+no
+for 23input :
+(35,41) (50,21) (8,8) (46,13) (7,45) (41,10) (2,41) (34,10) (12,43) (1,5) 
+the picks using dp are: (1,5) (12,43) (34,10) (2,41) (7,45) (8,8) (35,41) 
+the maximum profit using dp is 193
+
+
+the total weight using dp is 99
+
+the picks using greedy are:(1,5) (2,41) (7,45) (8,8) (12,43) (34,10) (35,41) 
+the maximum profit using greedy is 203
+
+the total weight using greedy is 99
+no
+for 24input :
+(2,18) (4,37) (6,13) (11,11) (28,6) (15,36) (46,14) (5,28) (46,24) (40,2) 
+the picks using dp are: (46,24) (5,28) (15,36) (11,11) (6,13) (4,37) (2,18) 
+the maximum profit using dp is 167
+
+
+the total weight using dp is 89
+
+the picks using greedy are:(2,18) (4,37) (5,28) (6,13) (11,11) (15,36) (28,6) 
+the maximum profit using greedy is 151
+
+the total weight using greedy is 71
+no
+for 25input :
+(18,3) (11,19) (43,45) (2,29) (36,27) (33,12) (45,36) (22,24) (22,32) (8,49) 
+the picks using dp are: (8,49) (22,32) (22,24) (2,29) (43,45) 
+the maximum profit using dp is 179
+
+
+the total weight using dp is 97
+
+the picks using greedy are:(2,29) (8,49) (11,19) (18,3) (22,32) (22,24) 
+the maximum profit using greedy is 168
+
+the total weight using greedy is 83
+no
+for 26input :
+(12,22) (7,31) (35,12) (7,30) (35,46) (5,26) (22,15) (45,14) (33,20) (42,43) 
+the picks using dp are: (42,43) (5,26) (35,46) (7,30) (7,31) 
+the maximum profit using dp is 176
+
+
+the total weight using dp is 96
+
+the picks using greedy are:(5,26) (7,30) (7,31) (12,22) (22,15) (33,20) 
+the maximum profit using greedy is 190
+
+the total weight using greedy is 86
+no
+for 27input :
+(47,48) (3,14) (7,24) (11,28) (30,18) (26,41) (39,6) (45,48) (17,1) (51,26) 
+the picks using dp are: (26,41) (11,28) (7,24) (3,14) (47,48) 
+the maximum profit using dp is 155
+
+
+the total weight using dp is 94
+
+the picks using greedy are:(3,14) (7,24) (11,28) (17,1) (26,41) (30,18) 
+the maximum profit using greedy is 132
+
+the total weight using greedy is 94
+no
+for 28input :
+(20,4) (51,42) (43,44) (29,25) (38,44) (16,33) (40,43) (46,46) (15,30) (23,18) 
+the picks using dp are: (15,30) (16,33) (38,44) (29,25) 
+the maximum profit using dp is 132
+
+
+the total weight using dp is 98
+
+the picks using greedy are:(15,30) (16,33) (20,4) (23,18) 
+the maximum profit using greedy is 110
+
+the total weight using greedy is 74
+no
+for 29input :
+(47,22) (32,34) (27,26) (4,18) (51,3) (43,19) (6,42) (34,23) (9,11) (47,46) 
+the picks using dp are: (47,46) (9,11) (6,42) (4,18) (32,34) 
+the maximum profit using dp is 151
+
+
+the total weight using dp is 98
+
+the picks using greedy are:(4,18) (6,42) (9,11) (27,26) (32,34) 
+the maximum profit using greedy is 154
+
+the total weight using greedy is 78
+no
+for 30input :
+(3,36) (1,17) (27,46) (11,15) (24,7) (33,44) (28,13) (51,29) (12,4) (46,11) 
+the picks using dp are: (33,44) (24,7) (11,15) (27,46) (1,17) (3,36) 
+the maximum profit using dp is 165
+
+
+the total weight using dp is 99
+
+the picks using greedy are:(1,17) (3,36) (11,15) (12,4) (24,7) (27,46) 
+the maximum profit using greedy is 138
+
+the total weight using greedy is 78
+no
+for 31input :
+(6,11) (30,37) (1,12) (8,34) (48,28) (28,24) (12,28) (40,12) (47,25) (26,44) 
+the picks using dp are: (26,44) (12,28) (8,34) (1,12) (30,37) (6,11) 
+the maximum profit using dp is 166
+
+
+the total weight using dp is 83
+
+the picks using greedy are:(1,12) (6,11) (8,34) (12,28) (26,44) (28,24) 
+the maximum profit using greedy is 190
+
+the total weight using greedy is 81
+no
+for 32input :
+(31,32) (36,33) (45,10) (35,5) (13,3) (41,43) (13,19) (28,38) (4,9) (21,25) 
+the picks using dp are: (21,25) (4,9) (28,38) (13,19) (31,32) 
+the maximum profit using dp is 123
+
+
+the total weight using dp is 97
+
+the picks using greedy are:(4,9) (13,19) (13,3) (21,25) (28,38) 
+the maximum profit using greedy is 126
+
+the total weight using greedy is 79
+no
+for 33input :
+(10,22) (49,46) (24,11) (6,19) (9,6) (37,14) (37,46) (46,4) (4,3) (34,16) 
+the picks using dp are: (4,3) (37,46) (49,46) (10,22) 
+the maximum profit using dp is 117
+
+
+the total weight using dp is 100
+
+the picks using greedy are:(4,3) (6,19) (9,6) (10,22) (24,11) (34,16) 
+the maximum profit using greedy is 91
+
+the total weight using greedy is 87
+no
+for 34input :
+(30,23) (8,42) (15,9) (2,18) (43,22) (17,1) (18,39) (21,41) (49,26) (33,7) 
+the picks using dp are: (21,41) (18,39) (2,18) (15,9) (8,42) (30,23) 
+the maximum profit using dp is 172
+
+
+the total weight using dp is 94
+
+the picks using greedy are:(2,18) (8,42) (15,9) (17,1) (18,39) (21,41) 
+the maximum profit using greedy is 173
+
+the total weight using greedy is 81
+no
+for 35input :
+(31,43) (20,42) (38,39) (45,15) (15,27) (31,44) (23,12) (34,37) (45,9) (29,36) 
+the picks using dp are: (31,44) (15,27) (20,42) (31,43) 
+the maximum profit using dp is 156
+
+
+the total weight using dp is 97
+
+the picks using greedy are:(15,27) (20,42) (23,12) (29,36) 
+the maximum profit using greedy is 160
+
+the total weight using greedy is 87
+no
+for 36input :
+(5,45) (11,22) (32,31) (36,3) (30,42) (9,35) (34,2) (25,20) (40,43) (8,28) 
+the picks using dp are: (8,28) (9,35) (30,42) (32,31) (11,22) (5,45) 
+the maximum profit using dp is 203
+
+
+the total weight using dp is 95
+
+the picks using greedy are:(5,45) (8,28) (9,35) (11,22) (25,20) (30,42) 
+the maximum profit using greedy is 223
+
+the total weight using greedy is 88
+no
+for 37input :
+(44,38) (20,15) (23,27) (1,42) (36,29) (26,40) (47,10) (35,27) (14,19) (3,44) 
+the picks using dp are: (3,44) (26,40) (1,42) (23,27) (44,38) 
+the maximum profit using dp is 191
+
+
+the total weight using dp is 97
+
+the picks using greedy are:(1,42) (3,44) (14,19) (20,15) (23,27) (26,40) 
+the maximum profit using greedy is 214
+
+the total weight using greedy is 87
+no
+for 38input :
+(9,12) (27,42) (38,25) (35,1) (16,43) (28,8) (3,48) (23,51) (48,48) (41,32) 
+the picks using dp are: (48,48) (23,51) (3,48) (16,43) (9,12) 
+the maximum profit using dp is 202
+
+
+the total weight using dp is 99
+
+the picks using greedy are:(3,48) (9,12) (16,43) (23,51) (27,42) 
+the maximum profit using greedy is 204
+
+the total weight using greedy is 78
+no
+for 39input :
+(50,40) (45,45) (24,28) (45,37) (20,21) (29,29) (32,29) (44,19) (2,2) (44,43) 
+the picks using dp are: (2,2) (29,29) (24,28) (45,45) 
+the maximum profit using dp is 104
+
+
+the total weight using dp is 100
+
+the picks using greedy are:(2,2) (20,21) (24,28) (29,29) 
+the maximum profit using greedy is 109
+
+the total weight using greedy is 75
+no
+for 40input :
+(18,20) (50,20) (41,46) (44,38) (16,33) (43,14) (47,37) (32,19) (38,50) (4,7) 
+the picks using dp are: (4,7) (38,50) (16,33) (41,46) 
+the maximum profit using dp is 136
+
+
+the total weight using dp is 99
+
+the picks using greedy are:(4,7) (16,33) (18,20) (32,19) 
+the maximum profit using greedy is 129
+
+the total weight using greedy is 70
+no
+for 41input :
+(20,7) (9,25) (35,26) (17,11) (27,9) (2,44) (3,25) (38,43) (45,4) (3,34) 
+the picks using dp are: (3,34) (38,43) (3,25) (2,44) (35,26) (9,25) 
+the maximum profit using dp is 197
+
+
+the total weight using dp is 90
+
+the picks using greedy are:(2,44) (3,25) (3,34) (9,25) (17,11) (20,7) (27,9) 
+the maximum profit using greedy is 181
+
+the total weight using greedy is 81
+no
+for 42input :
+(11,46) (22,6) (5,27) (49,16) (26,1) (47,19) (32,29) (17,41) (4,8) (25,4) 
+the picks using dp are: (4,8) (17,41) (32,29) (5,27) (22,6) (11,46) 
+the maximum profit using dp is 157
+
+
+the total weight using dp is 91
+
+the picks using greedy are:(4,8) (5,27) (11,46) (17,41) (22,6) (25,4) 
+the maximum profit using greedy is 133
+
+the total weight using greedy is 84
+no
+for 43input :
+(41,26) (22,43) (24,33) (9,42) (36,36) (25,46) (4,46) (51,8) (21,48) (49,20) 
+the picks using dp are: (21,48) (4,46) (25,46) (9,42) (22,43) 
+the maximum profit using dp is 225
+
+
+the total weight using dp is 81
+
+the picks using greedy are:(4,46) (9,42) (21,48) (22,43) (24,33) 
+the maximum profit using greedy is 258
+
+the total weight using greedy is 80
+no
+for 44input :
+(23,18) (12,28) (47,29) (17,24) (10,41) (27,50) (40,48) (16,38) (29,49) (28,39) 
+the picks using dp are: (29,49) (16,38) (27,50) (10,41) (12,28) 
+the maximum profit using dp is 206
+
+
+the total weight using dp is 94
+
+the picks using greedy are:(10,41) (12,28) (16,38) (17,24) (23,18) 
+the maximum profit using greedy is 199
+
+the total weight using greedy is 78
+no
+for 45input :
+(33,1) (33,37) (46,7) (18,41) (3,15) (9,50) (33,21) (27,2) (23,17) (25,32) 
+the picks using dp are: (25,32) (9,50) (3,15) (18,41) (33,37) 
+the maximum profit using dp is 175
+
+
+the total weight using dp is 88
+
+the picks using greedy are:(3,15) (9,50) (18,41) (23,17) (25,32) 
+the maximum profit using greedy is 157
+
+the total weight using greedy is 78
+no
+for 46input :
+(7,25) (4,46) (22,44) (32,24) (41,34) (36,23) (34,18) (33,3) (24,50) (43,51) 
+the picks using dp are: (43,51) (24,50) (22,44) (4,46) (7,25) 
+the maximum profit using dp is 216
+
+
+the total weight using dp is 100
+
+the picks using greedy are:(4,46) (7,25) (22,44) (24,50) (32,24) 
+the maximum profit using greedy is 192
+
+the total weight using greedy is 89
+no
+for 47input :
+(39,25) (24,45) (45,50) (20,16) (15,44) (21,46) (17,50) (15,12) (42,20) (10,32) 
+the picks using dp are: (10,32) (17,50) (21,46) (15,44) (24,45) 
+the maximum profit using dp is 217
+
+
+the total weight using dp is 87
+
+the picks using greedy are:(10,32) (15,12) (15,44) (17,50) (20,16) (21,46) 
+the maximum profit using greedy is 245
+
+the total weight using greedy is 98
+no
+for 48input :
+(2,45) (28,36) (36,34) (12,33) (6,28) (33,44) (1,5) (11,46) (28,30) (35,16) 
+the picks using dp are: (11,46) (1,5) (33,44) (6,28) (12,33) (28,36) (2,45) 
+the maximum profit using dp is 237
+
+
+the total weight using dp is 93
+
+the picks using greedy are:(1,5) (2,45) (6,28) (11,46) (12,33) (28,36) (28,30) 
+the maximum profit using greedy is 267
+
+the total weight using greedy is 88
+no
+for 49input :
+(47,30) (36,38) (28,50) (49,18) (18,32) (49,20) (51,50) (29,35) (32,40) (17,38) 
+the picks using dp are: (17,38) (32,40) (18,32) (28,50) 
+the maximum profit using dp is 160
+
+
+the total weight using dp is 95
+
+the picks using greedy are:(17,38) (18,32) (28,50) (29,35) 
+the maximum profit using greedy is 195
+
+the total weight using greedy is 92
+no
+for 50input :
+(16,23) (4,41) (1,15) (35,2) (18,44) (17,39) (22,1) (25,49) (50,47) (40,42) 
+the picks using dp are: (25,49) (17,39) (18,44) (1,15) (4,41) (16,23) 
+the maximum profit using dp is 211
+
+
+the total weight using dp is 81
+
+the picks using greedy are:(1,15) (4,41) (16,23) (17,39) (18,44) (22,1) 
+the maximum profit using greedy is 212
+
+the total weight using greedy is 78
+no
+the number of times greedy  is different from dp is 50

@@ -1,0 +1,217 @@
+#include<iostream>
+#include<string>
+#include<math.h>
+#include<cstdio>
+#include<cstdlib>
+#include<new>
+
+using namespace std;
+int max_element;
+int sec_max;
+
+
+int n;
+
+int *b;
+int p=log2(n)+1;
+b= new (nothrow) int[p];
+
+void reduce(int *a,int *group,int size)
+{
+	
+	int i=0,j=1,size1;
+	if(size==1)
+	{
+	 max_element=a[0];
+	 cout<<"\nthe maximum element is "<<max_element<<endl;
+	 
+	 /*b=hash.get(group[0]);
+	 for(int i=0;i<p;i++)
+	 {
+		cout<<b[i]<<" ";
+	 }
+	 cout<<endl;*/
+	 
+	}
+	else
+	{
+	 
+	 int *max,*gr,l=0;
+	 if(size%2==0)
+	 {
+		size1=size/2;
+		max=new (nothrow) int[size1];
+		gr=new (nothrow) int[size1];
+	 }
+	 else
+	 {
+		size1=size/2+1;
+		max=new (nothrow) int[size1];
+		gr=new (nothrow) int[size1];
+	 }
+	 while(i<size&&j<size)
+	 {
+		if(a[i]>=a[j])
+	        {
+			
+			hash1.put(a[j],group[i]);
+			max[l]=a[i];
+			cout<<max[l];
+			gr[l]=group[i];
+			l++;
+		}
+		else
+		{
+			
+			hash1.put(a[i],group[j]);
+			max[l]=a[j];
+			cout<<max[l];
+			gr[l]=group[j];
+		}
+		i=i+2;
+		j=j+2;
+	 }
+	 if(i==(size-1))
+	 {
+		max[l]=a[i];
+		gr[l]=group[i];
+		l++;
+	 }
+	 reduce(max,gr,size1);
+	}
+	
+}
+
+//creating and inserting elements into a hash table
+const int table_size=100;
+
+class linkedhashentry
+{
+	private:
+	int key;
+	int value;
+	linkedhashentry *next;
+	public:
+	linkedhashentry(int key,int value)
+	{
+		this->key=key;
+		this->value=value;
+		this ->next=NULL;
+	}
+	int getkey()
+	{
+	 return key;
+	}
+	int getvalue()
+	{
+	 return value;
+	}
+	int setvalue(int value)
+	{
+	 this->value=value;
+	}
+	linkedhashentry *getnext()
+	{
+	 return next;
+	}
+	void setnext(linkedhashentry *next)
+	{
+		this->next=next;
+	}
+};
+
+
+class hashmap
+{
+	private:
+	linkedhashentry **table;
+	public:
+		hashmap()
+		{
+		 table=new linkedhashentry* [table_size];		
+		 for(int i=0;i<table_size;i++)
+		 {
+			table[i]=NULL;
+		 }
+		}
+		void get(int key)
+		{
+			int i=0;
+			int hash=key%table_size;
+			if(table[hash]==NULL)
+				return ;
+			else
+			{
+				linkedhashentry *entry=table[hash];
+				while(entry!=NULL && entry->getkey()==key)
+				{
+					//cout<<entry->getvalue()<<" ";
+					b[i]=entry->getvalue();
+					i++;
+					entry=entry->getnext();
+				}
+				/*if(entry==NULL)
+					return -1;
+				else
+					return entry->getvalue();*/
+			}
+		}
+		void put(int key,int value)
+		{
+			int hash=key%table_size;
+			if(table[hash]==NULL)
+				table[hash]=new linkedhashentry(key,value);
+			else
+			{
+			 linkedhashentry *entry=table[hash];
+				while(entry->getnext()!=NULL)
+					entry=entry->getnext();
+				/*if(entry->getkey()==key)
+					entry->setvalue(value);*/
+				
+					entry->setnext(new linkedhashentry(key,value));
+			}
+		}
+	
+};
+
+int main()
+{
+	//hashmap hash;
+	int size;
+	int key,value,result;
+	int option;
+	cout<<"\nprogram to find max and second max in a given array"<<endl;	
+	do
+	 {
+	    cout<<"\n1.integers\n2.flaoting numbers\n3.strings \n4.delete hash table\nenter your choice:";
+	    cin>>option;
+	    switch(option)
+		{
+		  case 1: 
+			cout<<"\nenter the number of elements in the array:";
+			cin>>size;
+			n=size;
+			int *a,*group;
+			a=new (nothrow)int[size];
+			group=new (nothrow)int[size];
+			cout<<"\nenter numbers:";
+			for(int i=0;i<size;i++)
+			{
+				cin>>a[i];
+				group[i]=i/2;
+			}
+			reduce(a,group,size);
+			 break;
+		  /*case 2: 
+			cout<<"\nenter key at which element are to be printed:";
+			cin>>key;
+			result=hash.get(key);
+			cout<<result<<endl;
+			 break;*/
+		  
+		  case 0:break;
+		}
+	}while(option!=0);
+	return 0;
+}
