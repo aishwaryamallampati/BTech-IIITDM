@@ -14,7 +14,7 @@ ALGORITHM: The algorithm for transfer function generator is designed as a two-st
 - IDE: Visual Studio 
 
 ## Demo Video:
-<img src="walkthrough_part1.gif" width=250><br>
+<img src="walkthrough.gif" width=250><br>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
